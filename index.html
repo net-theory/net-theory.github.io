@@ -1,154 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Networking theory seminar</title>
   <meta charset="UTF-8">
   <meta name="description" content="Networking theory seminar">
-  <meta name="keywords" content="networking,theory,seminar,maciej,pacut,maciek,online,knapsack,repartition,packing,covering,communication,technology,vienna,postdoc,postdoctoral,researcher,grant,computer,science,papers,publications,algorithms,networks,networking">
+  <meta name="keywords"
+    content="networking,theory,seminar,maciej,pacut,maciek,online,knapsack,repartition,packing,covering,communication,technology,vienna,postdoc,postdoctoral,researcher,grant,computer,science,papers,publications,algorithms,networks,networking">
   <meta name="author" content="Maciej Pacut">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-  body {
-    color: #5b4b4b;
-    background-color: white;
-    font-family: sans-serif;
-    padding: 2% 10%;
-  }
-  
-  a:link {
-    color: rgb(160,0,0);
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: rgb(160,0,0);
-    text-decoration: none;
-  }
-  
-  a[href]:hover {
-    text-decoration: underline;
-  }
+  <style>
+    body {
+      color: #5b4b4b;
+      background-color: white;
+      font-family: sans-serif;
+      padding: 2% 10%;
+    }
 
-  h1 { text-align:center}
-  
-  h2.section {
-    padding-bottom: 1%;
-    margin-top: 6%;
-    border-bottom: solid 2px;
-  }
+    a:link {
+      color: rgb(160, 0, 0);
+      text-decoration: none;
+    }
 
-  li {
-    margin-bottom: 2%;
-  }
+    a:visited {
+      color: rgb(160, 0, 0);
+      text-decoration: none;
+    }
 
-  .subscript {
-    font-size: 8pt;
-    text-align: center
-  }
+    a[href]:hover {
+      text-decoration: underline;
+    }
 
-  table.intro {
-    width: 100%
-  }
+    h1 {
+      text-align: center
+    }
 
-  .intro-separator {
-    margin-bottom: 8%
-  }
+    h2.section {
+      padding-bottom: 1%;
+      margin-top: 6%;
+      border-bottom: solid 2px;
+    }
 
-  .footer-separator {
-    padding-bottom: 28%
-  }
+    li {
+      margin-bottom: 2%;
+    }
 
-  .imgtxt {
-    position: relative; top: 6px
-  }
+    .subscript {
+      font-size: 8pt;
+      text-align: center
+    }
 
-  .minibreak {
-    margin-bottom: 1%
-  }
-
-  .personal {
-    text-align:right
-  }
-  .fiber {
-      align: left;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  padding-top: 0px;
-  }
-  body{padding-top:0px; margin-top: 0px;
-    padding-left: 20%; padding-right:20%;
-  }
-
-  .licence { text-align: right; color: white; }
-  .fiberimg {
+    table.intro {
       width: 100%
-  }
-</style>
+    }
+
+    .intro-separator {
+      margin-bottom: 8%
+    }
+
+    .footer-separator {
+      padding-bottom: 28%
+    }
+
+    .imgtxt {
+      position: relative;
+      top: 6px
+    }
+
+    .minibreak {
+      margin-bottom: 1%
+    }
+
+    .personal {
+      text-align: right
+    }
+
+    .fiber {
+      align: left;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+
+    body {
+      padding-top: 0px;
+      margin-top: 0px;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    .licence {
+      text-align: right;
+      color: white;
+    }
+
+    .fiberimg {
+      width: 100%
+    }
+  </style>
 </head>
 
 <body>
-    <div class="fiber">
+  <div class="fiber">
     <img class="fiberimg" alt="networking theory seminar" src="./fiber.png">
-    </div>
+  </div>
   <div class="intro-separator"></div>
-  
+
   <h1>Networking theory seminar</h1>
 
   <h2 class="section">Online algorithms</h2>
 
-The Book:
-Online Computation and Competitive Analysis<br>
- Allan Borodin, Ran El-Yaniv, Cambridge University Press 1998
+  The Book:
+  <a href="https://dl.acm.org/doi/book/10.5555/290169">Online Computation and Competitive Analysis</a><br>
+  Allan Borodin, Ran El-Yaniv, Cambridge University Press 1998
 
   <h3>Topics from online algorithms:</h3>
-    <ol>
+  <ol>
+    <li>
+      <b>Caching: deterministic upper and lower bounds, and randomized upper bound</b><br>
+      (phase-based analysis)<br><br>
+
+      <a href="https://arxiv.org/pdf/cs/0205038.pdf">Competitive paging algorithms.</a>
+      A. Fiat, R. Karp, M. Luby, L. McGeoch, D. Sleator, N. Young<br>
+      Journal of Algorithms, 1991.<br><br>
+
+      Possibly the best source is: sections 1.2 and 2.2 from <a
+        href="https://www.brics.dk/LS/96/2/BRICS-LS-96-2.ps.gz">BRICS lecture notes</a>.
+      Also described in various other sources, e.g. chapters 3 and 4 from <a href="https://dl.acm.org/doi/book/10.5555/290169">Online Computation and Competitive Analysis</a>.
+
+
+    </li>
+
+    <li>
+      <b>Scheduling for identical and related machines.</b><br>
+      (doubling technique)<br><br>
+      As a short warm-up,
+      Section 12.2.1 from <a href="https://dl.acm.org/doi/book/10.5555/290169">Online Computation and Competitive Analysis</a>.<br>
+      <br>
+      The main part is section 3.2 from
+      <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.34.5122&rep=rep1&type=pdf">On-Line Routing of
+        Virtual Circuits with Applications to Load Balancing and Machine Scheduling.</a>
+      J. Aspnes, Y. Azar, A. Fiat, S. Plotkin, O. Waarts.<br>
+      J. ACM, 1997<br><br>
+
+      Also described in chapters 12.2.3 from <a href="https://dl.acm.org/doi/book/10.5555/290169">Online Computation and Competitive Analysis</a>.
+
+      Identical machines described in chapter 8 from <a href="https://www.brics.dk/LS/96/2/BRICS-LS-96-2.ps.gz">BRICS lecture notes</a>.
+    </li>
         <li>
-            <b>Caching: deterministic upper and lower bounds, and upper bound</b><br>
+      <b>List update: deterministic and randomized algorithms</b><br>
+      (potential function technique)<br><br>
 
-            <a href="https://arxiv.org/pdf/cs/0205038.pdf">Competitive paging algorithms.</a>
-            A. Fiat, R. Karp, M. Luby, L. McGeoch, D. Sleator, N. Young<br>
-             Journal of Algorithms, 1991.<br><br>
+      Section 2 from
+      <a href="http://www.cs.cmu.edu/~sleator/papers/amortized-efficiency.pdf">Amortized efficiency of list update and
+        paging rules.</a><br>
+      D. Sleator, R. Tarjan<br>
+      Communications of the ACM, 1985
+      <br><br>
+    
+      Section 3.1 (only algorithm BIT) from
+      <a href="https://www.cs.cmu.edu/~sleator/papers/list-update-problem.pdf">
+        Randomized competitive algorithms for the list update problem</a><br>
+    
+      N. Reingold, J. Westbrook, D. Sleator <br>
+    
+      Algorithmica, 1994<br><br>
+    
+      Analysis of combination of BIT and TIMESTAMP from
+      <a href="http://www14.in.tum.de/personen/albers/papers/ipl95.pdf">A combined BIT and TIMESTAMP algorithm for the list
+        update problem</a><br>
+      S. Albers, B. von Stengel, R. Werchner<br>
+      Information Processing Letters, 1995<br><br>
+    
+      Chapters 1 and 2 from <a href="https://dl.acm.org/doi/book/10.5555/290169">Online Computation and Competitive
+        Analysis</a>.
+      Chapter 5 from <a href="https://www.brics.dk/LS/96/2/BRICS-LS-96-2.ps.gz">BRICS lecture notes</a>.
+    </li>
+    <li>
+      <b>Online Set Cover via Primal-Dual approach</b><br>
 
-            Possibly the best source is: sections 1.2 and 2.2 from <a href="https://www.brics.dk/LS/96/2/BRICS-LS-96-2.ps.gz">BRICS lecture notes</a>.
-            Also described in various other sources, e.g. chapters 3 and 4 of The Book.
+      Sections 3, 4, 5.1 from <a href="https://www.tau.ac.il/~nivb/download/primal-dual-mor.pdf">Online primal–dual algorithms for covering and packing problems</a>.<br>
+      N. Buchbinder, J. Naor<br>
+      ESA 2005<br>
+      <br>
 
-
-        </li>
- 
-      <li>
-        <b>Scheduling for identical and related machines.</b><br>
-        As a short warm-up,
-        Section 12.2.1 from The Book<br>
-<br>
- The main part is section 3.2 from
-        <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.34.5122&rep=rep1&type=pdf">On-Line Routing of Virtual Circuits with Applications to Load Balancing and Machine Scheduling.</a>
-        J. Aspnes, Y. Azar, A. Fiat, S. Plotkin, O. Waarts.<br>
-          J. ACM, 1997<br><br>
-
-          Also described in chapters 12.2.3  of The Book.
+      Chapter 4, sections: 4.1, 4.2 (only Algorithm 1), 4.3 and 4.4.1 from the book <a
+        href="https://www.tau.ac.il/~nivb/download/pd-survey.pdf">The Design of Competitive
+        Online Algorithms via a Primal–Dual Approach</a>, Niv Buchbinder and Joseph Naor
       </li>
-     <li>
-        <b>Searching for a point on a line.</b> <br>
+      <li>
+        (half of a seminar)<br>
+        <b>Searching for a point on a line.</b> <br><br>
         Section 2 from <a href="https://sites.cs.ucsb.edu/~suri/cs231/Rlist/search.pdf">Searching in The Plane</a><br>
         R. Baeza-Yates, J. Culberson, G. Rawlins<br>
-         Information and Computation 1993
+        Information and Computation, 1993<br><br>
+
+
+      Chapter 9 from <a href="https://www.brics.dk/LS/96/2/BRICS-LS-96-2.ps.gz">BRICS lecture notes</a>.
       </li>
-        <li>
-          <b>Ski rental via Primal-Dual approach</b><br>
+  </ol>
 
-          Chapter 3 from the book <a href="https://www.tau.ac.il/~nivb/download/pd-survey.pdf">The Design of Competitive Online Algorithms via a Primal–Dual Approach</a>, Niv Buchbinder and Joseph Naor
-        </li>
-    </ol>
+  <h2 class="section">Other classic topics from online algorithms (under construction)</h2>
+  <ul>
+    <li>Work function for MTS</li>
+    <li>File migration</li>
+    <li>Routing and call admission</li>
+    <li>TCP acknowledgement</li>
+<li>Adam Mayerson: Parking Permit Problem</li>
+    <li>
+      Nikhil Bansal, Bouke Cloostermans: Minimizing Maximum Flow-Time on Related Machines, APPROX 2015
+    </li>
+    <li>
+      Aranyak Mehta, Amin Saberi, Umesh Vazirani, Vijay Vazirani, AdWords and generalized online matching, JACM 2008.
+    </li>
 
-    <div class="footer-separator"></div>
+    <li>Noga Alon, Baruch Awerbuch, Yossi Azar, Niv Buchbinder, Joseph Naor:       A general approach to online network optimization problems, SODA 2004</li>
+  </ul>
+
+ <h2 class="section">Network design, online (under construction)</h2>
+
+  <ul>
+    <li>Flows, Min cut max flow theorem</li>
+   <li>
+      <b>HST</b>.
+      Y Bartal: Probabilistic approximation of metric spaces and its algorithmic applications FOCS’96
+      Y Bartal: On approximating arbitrary metrices by tree metrics, FOCS’98
+      J Fakcharoenphol, S Rao, K Talwar: A tight bound on approximating arbitrary metrics by tree metric, JCSS’04
+
+    </li>
+    <li>D.P. Williamson, D.B. Shmoys "The design of Approximation Algorithms": chapter 9.3 Minimum-degree spanning tree
+    </li>
+    <li>Steiner tree</li>
+    <li>Facility location</li>
+
+  <li>
+      Oblivious routing
+    </li>
+    <li>Adaptive routing</li>
+    <li>Max flow via electrical flows</li>
+
+  </ul>
+  <div class="footer-separator"></div>
 
 
 
 
-    <!--   <a href="https://broadbandnow.com/Fiber">
+
+  <!--   <a href="https://broadbandnow.com/Fiber">
         Logo under creative commons licence
         </a> --->
 </body>
